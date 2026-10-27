@@ -1,0 +1,10 @@
+build/
+build-*/
+dist/
+*.log
+__pycache__/
+_to_delete/
+# Mods are separate projects; only the example lives here. Others can be
+# checked out under mods/<name>/ and build along with the loader.
+mods/*
+!mods/hello/
