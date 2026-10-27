@@ -448,7 +448,7 @@ void install() {
     }
     if (GetFileAttributesA(g_guard.c_str()) != INVALID_FILE_ATTRIBUTES) {
         LOG_W("the game stopped while the menu was being drawn with the game's font last time; "
-              "using the classic menu font (turn it back on in the Mods menu, Hobbit Mod Loader page)");
+              "using the classic menu font (GameFont=1 in hml.ini turns it back on)");
         DeleteFileA(g_guard.c_str());
         WritePrivateProfileStringA("Loader", "GameFont", "0", loader_config().ini_path.c_str());
         g_enabled = false;

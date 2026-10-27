@@ -120,7 +120,8 @@ typedef enum HmlEvent {
     HML_EVENT_D3D9_POST_RESET = 4,
     /* data: NULL. Process is exiting. Only flush files / free memory. */
     HML_EVENT_SHUTDOWN = 5,
-    /* data: NULL. The loader's Mods menu opened / closed (API v3). While it
+    /* data: NULL. The loader's Mods menu (pause menu > Mods, or F1) opened /
+     * closed (API v3). While it
      * is open, keys and buttons belong to the menu: ignore your hotkeys. */
     HML_EVENT_MENU_OPENED = 6,
     HML_EVENT_MENU_CLOSED = 7,

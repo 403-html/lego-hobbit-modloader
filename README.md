@@ -30,11 +30,12 @@ with the loader.
    when each frame is presented.
 5. It sits in front of the game's DirectInput (keyboard, mouse) and XInput
    (gamepad), so a mod can hide input from the game while it uses it.
-6. It has an in-game **Mods menu** (F1, or Back + Start on a gamepad): every
-   mod with its version and status, each mod's settings (changed with the
-   arrow keys / d-pad and saved at once), and a switch to turn a mod off for
-   the next start. It is also an entry of the game's own pause menu, drawn
-   by the game like its Options page (in any game language).
+6. It adds **Mods** to the game's own pause menu, right below Options. It
+   opens a page drawn by the game like its Options page: every mod with its
+   version and status, each mod's settings (changed with the arrow keys /
+   d-pad and saved at once), and a switch to turn a mod off for the next
+   start. Outside the pause menu, F1 (or Back + Start on a gamepad) opens the
+   same menu as an overlay.
 7. Mods can draw their own on-screen UI in the game's look (its font and
    colours, drawn by the game itself) and hide the game's HUD (API v4).
 8. Mods can be rebuilt while the game runs: changed DLLs in `mods\` are

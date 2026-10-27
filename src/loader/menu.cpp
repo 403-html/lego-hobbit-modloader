@@ -1,4 +1,6 @@
-// The loader's in-game Mods menu (F1 / Back+Start).
+// The loader's Mods menu: a page of the game's pause screen when opened from
+// its "Mods" entry (pause_entry.cpp), an overlay when opened with F1 /
+// Back+Start anywhere else.
 //
 // Page 1 lists the loader and every file in mods\ with its status. Page 2
 // shows one mod: details, "Enabled at next start", and the settings it

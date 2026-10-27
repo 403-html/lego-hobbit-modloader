@@ -125,7 +125,8 @@ keys pressed in other windows.
 
 ## Settings in the Mods menu (API v3)
 
-Players open the loader's Mods menu with **F1**. Each mod gets a page; add
+Players find the loader's Mods menu in the game's pause menu (**Mods**, below
+Options; F1 or Back + Start opens it anywhere else). Each mod gets a page; add
 your settings to it and the menu edits your variables directly and saves them
 to `mods\<id>.ini`:
 
