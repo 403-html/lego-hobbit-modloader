@@ -106,12 +106,18 @@ The MSVC build has not been compiled yet; MinGW is the tested path.
 
 `dist/game` then holds exactly what goes into the game folder.
 
-### Self-test
+### Tests
 
-`-DHML_BUILD_TESTS=ON` also builds `mods/selftest.dll`. Put it in `mods\` and
-start the game; `hml.log` gets a `PASS`/`FAIL` line per loader API check. It
-is a development tool, not something to ship. It also builds `shot_test.exe`,
-which writes test PNG/JPG/BMP files through freecam's screenshot encoder.
+`-DHML_BUILD_TESTS=ON` also builds a few development-only pieces (not
+something to ship):
+
+- `mods/selftest.dll`: put it in `mods\` and start the game; `hml.log` gets a
+  `PASS`/`FAIL` line per loader API check.
+- `mods/menudemo.dll`: registers one setting of every type for the Mods menu,
+  and draws a small API v4 UI and a toast.
+- `menu_host.exe`: stands in for the game. It loads `dinput8.dll` the same
+  way, drives the Mods menu with key presses and saves a PNG after each step
+  (`menu_*.png`). It runs without the game, e.g. under Wine.
 
 ## Layout
 
