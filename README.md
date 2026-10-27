@@ -1,25 +1,18 @@
 # Hobbit Mod Loader (HML)
 
+> Status: early (0.6.0). Supports the Steam `LEGOHobbit.exe`
+> (32-bit, DirectX 9). The DX11 `LEGOHobbit_DX11.exe` is 64-bit and not
+> supported yet.
+
 A native mod loader for **LEGO The Hobbit** (PC, Steam). It loads mods
 written in C, C++ or anything else that can build a 32-bit Windows DLL, and
 gives them a small, stable API for hooking game code, finding engine classes,
 reading settings, logging, running code every frame, and taking over input.
 
 This repository holds the loader, its SDK and one example mod (**hello**, a
-green square for a few seconds after start). Mods live in repositories of
-their own, for example:
-
-- **Free Camera**: fly the camera anywhere, zoom, save screenshots (F5 / F9).
-- **Auto Perfect Build**: instruction builds pick the right piece for you
-  (full stud bonus), or finish instantly.
-
-A mod checked out under `mods/<name>/` with a `hml_add_mod` line in
-`CMakeLists.txt` builds along with the loader; such folders are not part of
-this repository.
-
-> Status: early (0.6.0). Supports the Steam `LEGOHobbit.exe`
-> (32-bit, DirectX 9). The DX11 `LEGOHobbit_DX11.exe` is 64-bit and not
-> supported yet.
+green square for a few seconds after start). Mods are separate projects; one
+checked out under `mods/<name>/` with its own `CMakeLists.txt` builds along
+with the loader.
 
 ## How it works
 
